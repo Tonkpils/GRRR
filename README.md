@@ -73,5 +73,11 @@
    webpacker: ./bin/webpack-dev-server
    ```
 
-1. add `"relay": "relay-compiler --src ./app/javascript --schema ./app/javascript/packs/schema.json"` as a script in `package.json`
-1. create a controller action and in the view you can now render your `hello_react` component as `<%= react_component 'hello_react' %>`
+1. add the following as a script in `package.json`
+   ```
+   "relay": "relay-compiler --src ./app/javascript --schema ./app/javascript/packs/schema.json"
+   ```
+1. create a controller action and in the view you can now render your `hello_react` component 
+   ```
+   <%= react_component 'hello_react' %>
+   ```
